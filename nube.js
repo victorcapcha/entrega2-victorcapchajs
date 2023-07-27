@@ -4,7 +4,7 @@ let bebidas = [
     "nombre": "coca cola",
     "precio": 700,
     "sabor": "cola",
-    "marca": "coca-cola company",
+    "marca": "coca cola company",
     "tamaño": "500ml",
     "stock": 50
   },
@@ -14,16 +14,73 @@ let bebidas = [
     "sabor": "neutral",
     "marca": "manantial",
     "tamaño": "1 litro",
-    "stock": 500
+    "stock": 50
   },
   {
-    "nombre": "jugo de naranja",
-    "precio": 3.0,
-    "sabor": "naranja",
-    "marca": "delicioso",
-    "tamaño": "300ml",
+    "nombre": "levite",
+    "precio": 400,
+    "sabor": "pomelo",
+    "marca": "danone",
+    "tamaño": "350ml",
     "stock": 20
   },
+  {
+    "nombre": "fanta",
+    "precio": 900,
+    "sabor": "naranja",
+    "marca": "coca cola company",
+    "tamaño": "1 lt",
+    "stock": 50
+  },
+  {
+    "nombre": "pepsi",
+    "precio": 500,
+    "sabor": "limon",
+    "marca": "pepsico",
+    "tamaño": "1 litro",
+    "stock": 20
+  },
+  {
+    "nombre": "sprite",
+    "precio": 500,
+    "sabor": "limon",
+    "marca": "coca cola company",
+    "tamaño": "1 litro",
+    "stock": 20
+  },
+  {
+    "nombre": "7up",
+    "precio": 600,
+    "sabor": "limon",
+    "marca": "pepsico",
+    "tamaño": "500 ml",
+    "stock": 20
+  },
+  {
+    "nombre": "manaos",
+    "precio": 500,
+    "sabor": "naranja",
+    "marca": "refres now",
+    "tamaño": "2,25 lt",
+    "stock": 20
+  },
+  {
+    "nombre": "manaos",
+    "precio": 500,
+    "sabor": "cola",
+    "marca": "refres now",
+    "tamaño": "2,25 lt",
+    "stock": 20
+  },
+  {
+    "nombre": "manaos",
+    "precio": 3.0,
+    "sabor": "pomelo",
+    "marca": "refres now",
+    "tamaño": "2,25 lt",
+    "stock": 20
+  },
+
   // Agrega aquí más tipos de bebidas con sus respectivos datos
   // ...
 ];
@@ -51,7 +108,7 @@ let resultado;
 //         "stock": 100
 //     },
 //     {
-//         "nombre": "Jugo de Naranja",
+//         "nombre": "manaos",
 //         "precio": 3.0,
 //         "sabor": "Naranja",
 //         "marca": "Delicioso",

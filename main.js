@@ -57,3 +57,38 @@ function realizarCompra() {
   console.log(resultado);
   alert(resultado);
 }
+// Función para realizar una compra de bebida, actualizando el stock
+function realizarCompra() {
+  let seguirComprando = true;
+
+  while (seguirComprando) {
+    const nombreCompra = prompt("Ingrese el nombre de la bebida que desea comprar:");
+    const cantidadCompra = parseInt(prompt("Ingrese la cantidad que desea comprar:"));
+    const bebidaSeleccionada = bebidas.find(bebida => bebida.nombre === nombreCompra);
+
+    if (bebidaSeleccionada) {
+      if (cantidadCompra <= bebidaSeleccionada.stock) {
+        bebidaSeleccionada.stock -= cantidadCompra;
+        resultado = `Compra realizada:\nHa comprado ${cantidadCompra} unidades de ${nombreCompra}.`;
+      } else {
+        resultado = `No hay suficiente stock de ${nombreCompra}. Stock actual: ${bebidaSeleccionada.stock}`;
+      }
+    } else {
+      resultado = `No se encontró una bebida con el nombre "${nombreCompra}"`;
+    }
+
+    console.log(resultado);
+    alert(resultado);
+
+    const continuarCompra = prompt("¿Desea seguir comprando? (Responda con 's' o 'n')");
+    if (continuarCompra.toLowerCase() !== "s") {
+      seguirComprando = false;
+    }
+  }
+}
+
+// Función para coordinar el proceso de compras continuas
+function realizarCompraContinua() {
+  verListadoBebidas();
+  realizarCompra();
+}
